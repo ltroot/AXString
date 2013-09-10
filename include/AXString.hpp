@@ -35,7 +35,7 @@ class AXString {
 		}
 
 		friend std::ostream& operator<<(std::ostream& output, const AXString<Character>& str) {
-			typename std::list<typename AXString<Character>::stringType>::const_iterator iter = str.data_.begin();
+			typename std::list<stringType>::const_iterator iter = str.data_.begin();
 			for(;
 				iter != str.data_.end();
 				++iter) {
